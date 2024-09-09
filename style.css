@@ -5,39 +5,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
-
-
-
-/*
- * Base structure
- */
 
 /*
  * Header
  */
  .banner-wrap {
-  background-image: url(./assets/banner.jpg);
-  background-size: cover;
+  background-image: url(./assets/banner4.jpeg.jpg);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   z-index: 1;
+  height: 50vh;
+  width: 100%;
 }
+
 .overlay {
   z-index: -1;
   height: 100%;
   width: 100%;
-  background: black;
-  opacity: 50%;
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
 }
 
+.nav-masthead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .nav-masthead .nav-link {
-  padding: .25rem 0;
+  padding: 0.25rem 1rem;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.5);
   background-color: transparent;
@@ -56,4 +56,30 @@
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+.scrolling {
+  background: black;
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+
+@media (max-width: 768px) {
+  .banner-wrap {
+    height: 40vh;
+  }
+
+  .nav-masthead .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-wrap {
+    height: 30vh;
+  }
+
+  .nav-masthead .nav-link {
+    font-size: 0.8rem;
+  }
 }

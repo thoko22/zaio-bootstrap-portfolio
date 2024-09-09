@@ -23,25 +23,27 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body class="bg-light">
-<div class="banner-wrap vh-100 vw-100 text-white">
- <div class="overlay"></div>
-  <header class="px-5 p-3 text-white">
+
+  <header class="px-5 p-3 text-white fixed-top">
     <div>
       <h3 class="float-md-start text-center">Portfolio</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#about-us">About Us</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
-  <main class="d-flex flex-column align-items-center justify-content-center h-75 text-center">
+  <div class="banner-wrap vh-100 vw-100 d-flex flex-column align-items-center justify-content-center text-white">
+    <div class="overlay"></div>
+  <main class="text-center">
     <h1 class="display-1">I am Thokozile Mpofu</h1>
-    <p class="lead">Fullstack Developer.</p>
+    <span id="lead" class="typed">Fullstak Developer</span>
   </main>
 </div>
 
-<section>
+<section id="about-us">
   <div class="container p-5">
     <div class="card">
       <div class="card-body">
@@ -49,7 +51,7 @@
               <div class="col-md-6 col-sm-12">
                   <div class="row">
                       <div class="col-md-5">
-                          <img src="./assets/banner.jpg" class="img-fluid" alt="...">
+                          <img src="./assets/banner4.jpeg.jpg" class="img-fluid" alt="...">
                       </div>
                       <div class="col-md-7 mt-3">
                           <p><strong>Name:</strong> Thokozile Mpofu </p>
@@ -84,8 +86,8 @@
   </div>
 </section>
 
-<section>
-  <div class="container p-5">
+<section id="projects">
+  <div class="container p-5 p-3">
     <h1 class="text-center"><mark>Projects</mark></h1>
     <div class="row">
       <div class="col-md-4 mt-3">
@@ -96,10 +98,10 @@
             alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">Netflix Landing Page</h5>
+            <h5 class="card-title">Tesla Landing Page</h5>
             <p class="card-text">Built this with HTML & CSS</p>
-            <a href="https://movies-netflix-zaio.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-            <a href="https://github.com/thoko22/movies-netflix-zaio" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
+            <a href="https://zaio-git-tesla-clone.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
+            <a href="https://github.com/thoko22/zaio-git-tesla" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
           </div>
         </div>
       </div>
@@ -114,7 +116,7 @@
           <div class="card-body">
             <h5 class="card-title">Netflix Landing Page</h5>
             <p class="card-text">Built this with HTML & CSS</p>
-            <a href="https://movies-netflix-zaio.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
+            <a href="https://thokozile-movies-series.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
             <a href="https://github.com/thoko22/movies-netflix-zaio" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
           </div>
         </div>
@@ -128,10 +130,74 @@
             alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">Netflix Landing Page</h5>
+            <h5 class="card-title">Youtube Clone</h5>
             <p class="card-text">Built this with HTML & CSS</p>
-            <a href="https://movies-netflix-zaio.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-            <a href="https://github.com/thoko22/movies-netflix-zaio" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
+            <a href="https://zaio-youtube-clone-movies.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
+            <a href="https://github.com/thoko22/zaio-plartform-youtube-clone" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <img
+            src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Google Keep Clone</h5>
+            <p class="card-text">Built this with HTML , CSS & Javascript</p>
+            <a href="https://thoko-html-css-keep.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
+            <a href="https://github.com/thoko22/GOOGLE-KEEP" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-3"></div>
+        <div class="card">
+          <img
+            src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Google Keep Clone</h5>
+            <p class="card-text">Built with React</p>
+            <a href="https://thokozile-google-keep-clone.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
+            <a href="https://github.com/thoko22/GOOGLE-KEEP-react" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <img
+            src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+            <a href="https://tk-twitter-clone.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
+            <a href="https://github.com/thoko22/Twitter-Solo-Project" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-3"></div>
+        <div class="card">
+          <img
+            src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Tic Tac Toe game</h5>
+            <p class="card-text">Built this with React.js, Context API, API calls, Hooks </p>
+            <a href="https://thriving-thoko-game.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
+            <a href="https://github.com/thoko22/tic-tac-toe-REACT" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
           </div>
         </div>
       </div>
@@ -140,7 +206,7 @@
   </div> 
 </section>
 
-<section>
+<section id="contact">
   <div class="container p-5">
     <div class="card p-3">
       <div class="card-body px-5 text-center">
@@ -191,6 +257,30 @@
     </div>
   </div>
 </section>
+
+<footer class="bg-dark text-center text-white">
+  <div class="container p-3">
+      <p>Developed by Thokozile Mpofu using Bootstrap, for Zaio Bootstrap course</p>
+  </div>
+</footer>
+
+
+<script>
+        
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector("header")
+    header.classList.toggle("scrolling", window.scrollY > 0)
+  })
+</script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed('#typed', {
+  strings: ['Fullstack Developer',],
+  loop: true,
+  typeSpeed: 75,
+  shuffle: true
+  });
+</script>
 
 </body>
 </html>
